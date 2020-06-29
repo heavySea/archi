@@ -168,6 +168,8 @@ for config in configs:
   elif chip == 'vivosoc3_1':
     append_file('archi/chips/vivosoc3_1/fll.h')
     append_file('archi/chips/vivosoc3_1/freq.h')
+  elif chip == 'stellissimo':
+    append_file('archi/chips/stellissimo/apb_soc_ctrl.h')
 
 
   if chip == 'vega' or chip == 'gap9':
