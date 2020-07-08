@@ -170,6 +170,7 @@ for config in configs:
     append_file('archi/chips/vivosoc3_1/freq.h')
   elif chip == 'stellissimo':
     append_file('archi/chips/stellissimo/apb_soc_ctrl.h')
+    append_file('archi/pwm/pwm_v1.h')
 
 
   if chip == 'vega' or chip == 'gap9':
