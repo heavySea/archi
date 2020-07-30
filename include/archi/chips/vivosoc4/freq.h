@@ -14,25 +14,14 @@
  * limitations under the License.
  */
 
+#ifndef __ARCHI_CHIPS_VIVOSOC4_FREQ_H__
+#define __ARCHI_CHIPS_VIVOSOC4_FREQ_H__
 
-#ifndef __ARCHI_ARNOLD_PULP_H__
-#define __ARCHI_ARNOLD_PULP_H__
-
-#include "archi/chips/arnold/properties.h"
-
-//#include "archi/periph_v2.h"
-//#include "archi/gpio_v2.h"
-#include "archi/riscv/priv_1_10.h"
-#include "archi/riscv/pcer_v2.h"
-
-#include "archi/chips/arnold/memory_map.h"
-#include "archi/chips/arnold/apb_soc.h"
-#include "archi/gpio/gpio_v3.h"
-
-#include "archi/udma/cpi/udma_cpi_v1.h"
-#include "archi/udma/i2c/udma_i2c_v2.h"
-#include "archi/udma/spim/udma_spim_v3.h"
-#include "archi/udma/uart/udma_uart_v1.h"
-#include "archi/udma/udma_v3.h"
+// register address offsets
+#define FREQ_CLK_TREE_CONF_GLOBAL_OFFSET     0x040 // base addr 0x1A104000 (ARCHI_APB_SOC_CTRL_ADDR)
+#define FREQ_CLK_TREE_CONF_CL_OFFSET         0x050
+#define FREQ_CLK_TREE_CONF_SOC_OFFSET        0x054
+#define FREQ_CLK_TREE_CONF_PER_OFFSET        0x058
+#define FREQ_CLK_TREE_CONF_PM_OFFSET         0x05C
 
 #endif

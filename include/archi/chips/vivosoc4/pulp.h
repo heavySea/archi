@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 ETH Zurich and University of Bologna
+ * Copyright (C) 2018 ETH Zurich, University of Bologna
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,24 +15,26 @@
  */
 
 
-#ifndef __ARCHI_ARNOLD_PULP_H__
-#define __ARCHI_ARNOLD_PULP_H__
+#ifndef __ARCHI_CHIPS_VIVOSOC4_PULP_H__
+#define __ARCHI_CHIPS_VIVOSOC4_PULP_H__
 
-#include "archi/chips/arnold/properties.h"
+#include "archi/chips/vivosoc4/properties.h"
 
-//#include "archi/periph_v2.h"
-//#include "archi/gpio_v2.h"
-#include "archi/riscv/priv_1_10.h"
-#include "archi/riscv/pcer_v2.h"
+#include "archi/riscv/priv_1_9.h"
+#include "archi/riscv/pcer_v1.h"
 
-#include "archi/chips/arnold/memory_map.h"
-#include "archi/chips/arnold/apb_soc.h"
-#include "archi/gpio/gpio_v3.h"
+#include "archi/chips/vivosoc4/memory_map.h"
+#include "archi/chips/vivosoc4/apb_soc.h"
+#include "archi/stdout/stdout_v3.h"
+#include "archi/gpio/gpio_v2.h"
+#include "archi/dma/mchan_v6.h"
 
-#include "archi/udma/cpi/udma_cpi_v1.h"
 #include "archi/udma/i2c/udma_i2c_v2.h"
 #include "archi/udma/spim/udma_spim_v3.h"
 #include "archi/udma/uart/udma_uart_v1.h"
 #include "archi/udma/udma_v3.h"
+
+#include "archi/chips/vivosoc4/fll.h"
+#include "archi/chips/vivosoc4/freq.h"
 
 #endif

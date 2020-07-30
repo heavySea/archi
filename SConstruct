@@ -152,7 +152,9 @@ for config in configs:
     append_file('archi/chips/pulp/apb_soc_ctrl.h')
   elif chip == 'gap':
     append_file('archi/pwm/pwm_v1.h')
+    append_archi_files('archi/pwm/v1/pwm_v1')
   elif chip == 'wolfe':
+    append_archi_files('archi/pwm/v1/pwm_v1')
     append_file('archi/pwm/pwm_v1.h')
     append_file('archi/chips/wolfe/pmu.h')
     append_file('archi/chips/wolfe/apb_soc.h')
@@ -171,6 +173,9 @@ for config in configs:
   elif chip == 'stellissimo':
     append_file('archi/chips/stellissimo/apb_soc_ctrl.h')
     append_file('archi/pwm/pwm_v1.h')
+  elif chip == 'vivosoc4':
+    append_file('archi/chips/vivosoc4/fll.h')
+    append_file('archi/chips/vivosoc4/freq.h')
 
 
   if chip == 'vega' or chip == 'gap9':

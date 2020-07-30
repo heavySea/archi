@@ -55,6 +55,16 @@
 #define MCHAN_VERSION       6
 #define EFUSE_VERSION       1
 #define PADS_VERSION        2
+#define PWM_VERSION         1
+
+
+/*
+ * SOC
+ */
+
+#define ARCHI_PWM_NB          1
+#define ARCHI_PWM_NB_TIMERS 4
+
 
 /*
  * CLUSTER
@@ -168,6 +178,8 @@
 #define ARCHI_SOC_EVENT_UDMA_NB_EXTRA_EVT 10
 
 #define ARCHI_SOC_EVENT_PERIPH_FIRST_EVT(x)     ((x)*ARCHI_SOC_EVENT_UDMA_NB_CHANNEL_EVT)
+
+#define ARCHI_SOC_EVENT_NB_TOTAL     64
 
 #define ARCHI_SOC_EVENT_I2C0_RX      10
 #define ARCHI_SOC_EVENT_I2C0_TX      11
