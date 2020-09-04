@@ -62,10 +62,11 @@
 #define STDOUT_VERSION      2
 #define GPIO_VERSION        2
 #define ITC_VERSION         1
-#define FLL_VERSION         1
+//#define FLL_VERSION         1
 #define RISCV_VERSION       4
 #define HWME_VERSION        1
 #define PADS_VERSION        2
+#define PWM_VERSION         1
 
 
 /*
@@ -125,7 +126,7 @@
  * FLLS
 */
 
-#define ARCHI_NB_FLL  2
+//#define ARCHI_NB_FLL  2
 
 
 
